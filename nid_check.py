@@ -1,5 +1,3 @@
-#python 3.7.9
-
 import requests
 from flask import Flask, render_template, request
 
@@ -16,7 +14,6 @@ def nid_data():
     if request.method == 'POST':
         form_data = request.form
         req_data = {
-        # "mobile" : form_data['mobile'],
         "nid" : form_data['nid'],
         "dob" : form_data['dob']
         }
